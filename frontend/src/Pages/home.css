@@ -1,0 +1,44 @@
+
+.expenses-table {
+    max-width: 800px; 
+    margin: 0 auto;
+  }
+  h1{
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  .expenses-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+ 
+  .expenses-table tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+
+  .expenses-table td {
+    padding: 8px;
+  }
+  
+ 
+  .expenses-table .title-column {
+    text-align: left;
+  }
+  
+  
+  .expenses-table .money-column {
+    text-align: right;
+  }
+
+  .expenses-table .positive {
+    color: green;
+  }
+  
+
+  .expenses-table .negative {
+    color: red;
+  }

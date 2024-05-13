@@ -1,0 +1,58 @@
+
+.otp-container {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 60px;
+}
+
+
+.otp_input {
+    width: 35px;
+    height: 40px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 16px;
+} 
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 768px) {
+    .otp_input {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .form_btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+} 
+
+@media (max-width: 576px) {
+    .otp_input {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .form_btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}  
+
+
+.email_container{
+    margin-top: 5%;
+}
