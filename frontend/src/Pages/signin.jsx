@@ -41,7 +41,7 @@ const Signin = () => {
                 const response = await axios.post("http://localhost:4500/user/signin",formData)
                 localStorage.setItem("token",response.data.token)
                 localStorage.setItem("name", response.data.name)
-                navigate("/")
+                navigate("/landing")
             } catch (error) {
                 console.error("Error:", error);
                 alert("user not found")
@@ -50,7 +50,7 @@ const Signin = () => {
     };
 
     return (
-        <div className="signup-form-container">
+        <div className="signin-form-container">
             <h2>Sign in</h2>
             <br></br>
             <form onSubmit={handleSubmit}>
@@ -64,8 +64,10 @@ const Signin = () => {
                     <input type="password" name="password" value={formData.password} onChange={handleChange} />
                     {errors.password && <span className="error">{errors.password}</span>}
                 </div>
-                <Link to="/email">Forgot Password</Link><br></br><br></br>
-                <button type="submit" className='form_btn'>Sign in</button>
+                <div className="form-actions">
+                    <button type="submit" className='form_btn'>Sign in</button>
+                    <Link to="/email" className='forgot'>Forgot Password?</Link>
+                </div><br></br>
                 Don't have an account <span>   </span>
                 <Link to='/signup'>
                signup

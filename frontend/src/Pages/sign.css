@@ -1,65 +1,165 @@
 .signup-form-container {
-    max-width: 380px;
-    margin: 1% auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-   
-}
-h2{
-  margin-top: -2px;}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 95%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.error {
-    color: red;
-    font-size: 0.8em;
-}
-
-.form_btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.form_btn:hover {
-    background-color: #478849;
-}
-
-
-/* for expenses */
-
-.expense-container{
   max-width: 380px;
   margin: 1% auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
-  margin-top: 5%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.n input{
+.signin-form-container {
+  max-width: 350px;
+  margin: 1% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: -2px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.forgot {
+  color: #007bff;
+  text-decoration: none;
+  
+}
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form_btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+   
+}
+
+.form_btn:hover {
+  background-color: #478849;
+}
+
+
+
+@media (max-width: 600px) {
+  .signin-form-container {
+      padding: 20px;
+      max-width: 300px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form_btn {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+}
+
+
+/* for expenses */
+
+.expense-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 1% auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 3%;
+}
+
+
+.expense-container h2 {
+  color: #333;
+}
+
+.expense-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input {
+  width: 95%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  padding: 0.5rem;
+}
+
+
+.n input {
   width: 95%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -70,6 +170,7 @@ input[type="password"] {
 label {
   display: block;
   font-weight: bold;
+  padding: 5px;
 }
 
 .error {
@@ -80,14 +181,16 @@ label {
 .form_btn {
   background-color: #4CAF50;
   color: white;
-  padding: 10px 20px;
+  padding: 0.75rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
   .expense-form {
     width: 90%;
   }
-} 
+}

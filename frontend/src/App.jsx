@@ -10,6 +10,7 @@ import Signin from "./Pages/signin";
 import Email from "./Forgot/email";
 import Otp from "./Forgot/otp";
 import Resetpass from "./Forgot/resetpass";
+// import Home from "./Pages/home";
 
 
 
@@ -21,9 +22,10 @@ export default function App() {
         <BrowserRouter>
         {/* <Navbar /> */}
           <Routes>
-            <Route path="/" element={<Landing />}></Route>
+            <Route path="/landing" element={<Landing />}></Route>
+            {/* <Route path="/" element={<Home />}></Route> */}
             <Route path="/signup" element={<Signup />}></Route>
-            <Route path="/signin" element={<Signin />}></Route>
+            <Route path="/" element={<Signin />}></Route>
             <Route path="/email" element={<Email />}></Route>
             <Route path="/otp" element={<Otp />}></Route>
             <Route path="/resetpass" element={<Resetpass />}></Route>

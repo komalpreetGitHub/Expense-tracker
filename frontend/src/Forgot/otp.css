@@ -2,7 +2,7 @@
 .otp-container {
     max-width: 350px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 1rem;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -11,13 +11,25 @@
 }
 
 
-.otp_input {
-    width: 35px;
-    height: 40px;
+.otp-container .otp_input {
+    width: 30px;
+    height: 30px;
     margin: 0 5px;
+    align-items: center;
     text-align: center;
     font-size: 16px;
+    margin-bottom: 20px;
 } 
+
+.form-group-otp input {
+    width: 95%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
 
 .error {
     color: red;
@@ -27,7 +39,7 @@
 
 
 @media (max-width: 768px) {
-    .otp_input {
+    .otp-container .otp_input {
         width: 30px;
         height: 30px;
         font-size: 14px;

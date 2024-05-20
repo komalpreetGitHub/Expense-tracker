@@ -22,7 +22,7 @@ const user = mongoose.model("user", userSchema)
 const expenseSchema = new mongoose.Schema({
     userId: String,
     title: String,
-    date:Date,
+    date: String,
     money: Number,
    
 })

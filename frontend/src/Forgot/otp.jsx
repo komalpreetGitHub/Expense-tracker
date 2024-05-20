@@ -61,7 +61,7 @@ const Otp = () => {
             <br />
             <form onSubmit={handleSubmit}>
                 <label>Enter OTP</label><br/>
-                <div className="form-group">
+                <div className="form-group-otp">
                     {otp.map((digit, index) => (
                         <input
                             key={index}

@@ -69,7 +69,7 @@ const Signup = () => {
                     password: '',
                     confirmPassword: ''
                 });
-                navigate("/signin");
+                navigate("/");
             } catch (error) {
                 console.error("Error:", error);
                 alert("email id already exist");
@@ -107,13 +107,11 @@ const Signup = () => {
                     <input type="password" name="password" value={formData.password} onChange={handleChange} />
                     {errors.password && <span className="error">{errors.password}</span>}
                 </div>
-                <div className="form-group">
-                    <label>Confirm Password:</label>
-                    <input type="password" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} />
-                    {errors.confirmPassword && <span className="error">{errors.confirmPassword}</span>}
+            
+                <div>
+                <button type="submit" className='form_btn'>Sign Up</button><br></br><br></br>
+                <p className='lower_txt'>Already have an account? <Link to='/'>Signin</Link></p>
                 </div>
-                <button type="submit" className='form_btn'>Sign Up</button>
-                <p className='lower_txt'>Already have an account? <Link to='/signin'>Signin</Link></p>
             </form>
         </div>
     );

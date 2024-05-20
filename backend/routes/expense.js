@@ -26,7 +26,7 @@ expenseRouter.post("/addexp", Auth, async (req, res) => {
     try {
         const response = await Expense.create({
             userId: req.userId,
-            date: Date.now(),
+            date: body.date,
             title: body.title,
             money: body.money,
         });
@@ -41,7 +41,7 @@ expenseRouter.post("/addexp", Auth, async (req, res) => {
 
 
 
-
+// get all expenses of user
 
 expenseRouter.get("/allexp", Auth, async (req, res) => {
 
