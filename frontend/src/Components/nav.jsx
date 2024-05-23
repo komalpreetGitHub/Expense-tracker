@@ -1,7 +1,7 @@
 import "./nav.css"
 import { useRecoilState } from "recoil";
 import { pageState } from "../../state";
-import { FaUser } from "react-icons/fa6";
+// import { FaUser } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import { BiMenu } from "react-icons/bi";
 import { GiTakeMyMoney } from "react-icons/gi";
@@ -64,7 +64,11 @@ export default function Navbar() {
                             handleLinkClick();
                         }
                         }>Reports</li>
-                        <li>Settings</li>
+                        <li onClick={() => {
+                            setPage("Insights");
+                            handleLinkClick();
+                        }
+                        }>Insights</li>
                     </ul>
                 </div>
                 <div className="main">
@@ -85,7 +89,7 @@ export default function Navbar() {
                         <li onClick={() => { setPage("Home"); handleLinkClick(); }}>Home</li>
                         <li onClick={() => { setPage("Expenses"); handleLinkClick(); }}>Expenses</li>
                         <li onClick={() => { setPage("Reports"); handleLinkClick(); }}>Reports</li>
-                        <li>Settings</li>
+                        <li onClick={() => { setPage("Insights"); handleLinkClick(); }}>Insights</li>
                         <li>Log out</li>
                     </ul>
                 </div>

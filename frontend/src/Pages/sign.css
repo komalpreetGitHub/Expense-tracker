@@ -194,3 +194,17 @@ label {
     width: 90%;
   }
 }
+
+
+@media screen and (min-width: 375px) {
+  .expense-container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .expense-container {
+    width: 65%;
+  }
+}
+
