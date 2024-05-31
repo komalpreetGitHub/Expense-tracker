@@ -64,7 +64,7 @@ th {
 .date-filter-container {
   display: flex;
   flex-direction: column;
- 
+
 }
 
 
@@ -111,19 +111,20 @@ th {
 
 
 /* reports */
-h2{
+h2 {
   margin-bottom: -4%;
 }
 
-.d{
+.d {
   text-align: center;
   align-items: center;
   padding: 2rem;
 }
 
-.se{
-  margin-top: -210px;
-font-weight: bold;}
+.se {
+  margin-top: -195px;
+  font-weight: bold;
+}
 
 
 .select {
@@ -135,9 +136,9 @@ font-weight: bold;}
   cursor: pointer;
 }
 
-.tbl{
+.tbl {
   margin-top: 150px;
- 
+
 }
 
 .selectlist li {
@@ -152,4 +153,21 @@ font-weight: bold;}
 
 .selectlist li:hover {
   background: #2d984d;
-} 
+}
+
+
+/*insights */
+
+
+.line1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.line {
+  margin-top: 20px;
+  height: 500px;
+  width: 70%;
+}
